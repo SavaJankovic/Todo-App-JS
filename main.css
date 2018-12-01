@@ -1,0 +1,163 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* LEFT BOX - CREATE NEW TODOS */
+
+.left-box{
+  width: 50%;
+  min-height: 900px;
+  float: left;
+  background: #46529d;
+  color: #fff;
+  text-align: center;
+}
+.left-box h1{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+}
+.left-box img{
+padding-bottom: 100px;
+}
+
+.left-box input{
+height: 25px;
+width: 250px;
+background: transparent;
+border: none;
+border-bottom: 2px solid #fff;
+font-size: 25px;
+color: #fff;
+}
+.left-box input:focus  {
+  outline: none;
+}
+::placeholder {
+    color: #fff;
+    opacity: 1;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.left-box button{
+  width: 150px;
+  height: 32px;
+  margin-left: 30px;
+  color: #fff;
+  background: #2ebaee;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.left-box button:focus{
+  outline: none;
+}
+.left-box button:hover{
+  background: #fff;
+  color: #2ebaee;
+  cursor: pointer;
+}
+.left-box p{
+position: relative;
+top: 100px;
+}
+.img-sava{
+  padding-bottom: 0px!important;
+}
+/* RIGHT BOX - LIST TODOS */
+
+.right-box{
+  width: 50%;
+  float: right;
+  text-align: center;
+  color: #46529d;
+}
+.search-box{
+  padding-top:100px;
+  padding-bottom: 60px;
+}
+.search-box span{
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+.search-box input{
+height: 25px;
+width: 250px;
+background: transparent;
+border: none;
+border-bottom: 2px solid #46529d;
+font-size: 25px;
+color: #46529d;
+}
+.search-box input:focus  {
+  outline: none;
+}
+.label{
+  font-size: 20px;
+  cursor: pointer;
+}
+#todos{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+h2{
+  letter-spacing: 1px;
+  padding-bottom: 50px;
+}
+#todos div{
+  margin: 15px;
+  font-size: 22px;
+text-align: left;
+margin-left: 50px;
+}
+#todos div input{
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+#todos div button{
+  position: relative;
+top: -10px;
+right: -14px;
+width: 27px;
+height: 22px;
+background: #fff;
+color: #46529d;
+border:2px solid #46529d;
+font-weight: bold;
+text-align: center;
+}
+#todos div button:hover{
+  background: #46529d;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+  .left-box{
+    display: block;
+    width: 100%;
+  }
+  .right-box{
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+#new-todo input{
+  display: block;
+margin: 51px auto;
+}
+.search-box span{
+  display: block;
+margin: 51px auto;
+}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo App with ES6</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="left-box">
+    <h1>Create new todos : </h1>
+    <img src="img/check-list.png" alt="">
+    <form id="new-todo">
+      <input type="text" placeholder="Type here .." name="text">
+      <button>SUBMIT</button>
+    </form>
+
+    <p>Created by Sava Jankovic <img src="img/robot.png" class="img-sava"/></p>
+
+  </div>
+
+  <div class="right-box">
+
+    <div class="search-box">
+      <span>Search todo : </span>
+      <input type="text" id="search-text" name="" value="">
+    </div>
+
+    <label class="label">
+  <input type="checkbox" id="hide-completed"> Hide completed
+  </label>
+
+    <div id="todos">
+    </div>
+
+  </div>
+  <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+  <script src="todo-functions.js"></script>
+  <script src="todo.js"></script>
+
+</body>
+
+</html>
